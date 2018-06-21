@@ -1,1 +1,1 @@
-include ':app', ':shadowcircle'
+include ':app', ':circleimageview'

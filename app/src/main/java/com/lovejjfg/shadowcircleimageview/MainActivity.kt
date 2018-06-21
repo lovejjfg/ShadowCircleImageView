@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val checkBox = findViewById(R.id.cb_shadow) as CheckBox
         checkBox.setOnCheckedChangeListener { compoundButton, b ->
             if (b) {
-                imageView.setShadow(30)
+                imageView.setShadow(9)
             } else {
                 imageView.setShadow(0)
 

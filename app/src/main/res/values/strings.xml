@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ShadowCircleImageView</string>
+    <string name="show_shadow">显示阴影</string>
 </resources>

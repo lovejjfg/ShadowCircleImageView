@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipChildren="false"
     android:background="#fff"
+    android:clipChildren="false"
+    android:orientation="vertical"
     tools:context="com.lovejjfg.shadowcircleimageview.MainActivity">
 
 
     <CheckBox
         android:id="@+id/cb_shadow"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:checked="true"
-        android:text="显示阴影"
+        android:text="@string/show_shadow"
         />
 
     <com.lovejjfg.shadowcircle.CircleImageView
         android:id="@+id/civ"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:src="@drawable/test"
-        app:civ_elevation="8dp"/>
+        app:civ_elevation="20dp"/>
 
     <com.lovejjfg.shadowcircle.CircleImageView
-        android:layout_marginTop="20dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:src="@drawable/test"
-        app:civ_border_color="@color/color_dark"
-        app:civ_border_width="3dp"
         />
 
 

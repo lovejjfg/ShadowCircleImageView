@@ -1,16 +1,19 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as int
     buildToolsVersion BUILD_TOOLS_VERSION as String
+
     defaultConfig {
-        applicationId "com.lovejjfg.shadowcircleimageview"
         minSdkVersion MIN_SDK_VERSION
         targetSdkVersion TARGET_SDK_VERSION
         versionCode project.gitCommitCount
         versionName project.gitTag
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -21,12 +24,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation "com.android.support:appcompat-v7:${SUPPORT_V7_VERSION}"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    compileOnly "com.android.support:appcompat-v7:${SUPPORT_V7_VERSION}"
     testImplementation 'junit:junit:4.12'
-    implementation project(':circleimageview')
 }
+apply from: 'bintray.gradle'
