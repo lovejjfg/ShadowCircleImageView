@@ -1,13 +1,17 @@
 
 ### ShadowCircleImageView
 
+[ ![Download](https://api.bintray.com/packages/lovejjfg/maven/CircleImageView/images/download.svg) ](https://bintray.com/lovejjfg/maven/CircleImageView/_latestVersion)
+
 ![ShadowCircleImageView](https://raw.githubusercontent.com/lovejjfg/screenshort/12c86e1440bda3845170396e06963ff4b7c3f4e9/shadow.png)
+
+`compile 'com.lovejjfg:circleimageview:0.0.1-beta'`
 
 CircleImageView fork from [hdodenhof/CircleImageView](https://github.com/hdodenhof/CircleImageView)
 
 ### UPDATE:
 
-V1.0.0
+* 0.0.1-beta
 
 1、Add Shadow function.
 
